@@ -4,7 +4,7 @@ puts 'What is your name?'
 name = gets
 puts "Hello, #{name}"
 
-puts "Choose a game"
+puts "The Choice is Yours!  Choose a game:"
 puts "Axis & Allies"
 puts "Battleship"
 puts "Bomberman"

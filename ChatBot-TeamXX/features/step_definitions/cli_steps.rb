@@ -3,5 +3,9 @@ Given /^the application is running$/ do
 end
 
 Then /^I should see "([^""]*)"$/ do |arg1|
-	assert_partial_output(arg1)
+  assert_partial_output(arg1)
+end
+
+Given /^I enter "([^""]*)"$/ do |arg1|
+  type(arg1)
 end

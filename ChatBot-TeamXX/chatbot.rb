@@ -1,12 +1,16 @@
-$stdout.sync = true
+
 
 puts 'What is your name?'
-name = gets
-puts "Hello, #{name}"
+STDOUT.sync = true
+userIn = gets.chomp
+puts "Hello, #{userIn}"
 
-puts "The Choice is Yours!  Choose a game:"
-puts "Axis & Allies"
-puts "Battleship"
-puts "Bomberman"
-puts "Command & Conquer"
-puts "Global Thermonuclear War"
+puts "1.	Axis & Allies"
+puts "2.	Battleship"
+puts "3.	Bomberman"
+puts "4.	Command & Conquer"
+puts "5.	Global Thermonuclear War"
+puts "The Choice is Yours!  Choose a game number:"
+
+
+puts (userIn == "5" ? "BOOM!" : "Not today, fool!")

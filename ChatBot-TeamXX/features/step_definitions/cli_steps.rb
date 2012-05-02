@@ -9,3 +9,7 @@ end
 Given /^I enter "([^""]*)"$/ do |arg1|
   type(arg1)
 end
+
+Given /^the output contains "([^""]*)"$/ do |arg1|
+  assert_partial_output(arg1)
+ end
